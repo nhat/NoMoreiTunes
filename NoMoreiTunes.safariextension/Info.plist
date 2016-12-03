@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Florian Pichler</string>
 	<key>Builder Version</key>
-	<string>8536.26.14</string>
+	<string>12602.3.12</string>
 	<key>CFBundleDisplayName</key>
 	<string>NoMoreiTunes</string>
 	<key>CFBundleIdentifier</key>
@@ -53,6 +53,8 @@
 	</dict>
 	<key>Description</key>
 	<string>Prevents iTunes Preview and App Store pages from launching iTunes.</string>
+	<key>DeveloperIdentifier</key>
+	<string>ZKFD3YHZPB</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>

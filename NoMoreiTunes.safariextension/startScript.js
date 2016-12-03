@@ -268,7 +268,7 @@
 		}
 		if (event.name === 'setNoMoreItunesHideToolbar') {
 			NoMoreiTunes.shouldHideToolbar = event.message;
-			hideBar();
+			// hideBar();
 		}
 	}, false);
 
@@ -379,11 +379,13 @@
 
 		$('#nomoreitunes #launch').addEventListener('click', openStore, false);
 
-		win.addEventListener('load', function() {
-			setTimeout(function() {
-				doc.documentElement.classList.add('shownomoreitunesbar');
-			}, 500);
-		}, false);
+        if (!NoMoreiTunes.shouldHideToolbar) {
+            win.addEventListener('load', function() {
+                setTimeout(function() {
+                    doc.documentElement.classList.add('shownomoreitunesbar');
+                }, 500);
+            }, false);
+        }
 
 		var userOverride = $('#userOverridePanel, .loadingbox .roundtop');
 
